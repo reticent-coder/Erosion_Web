@@ -90,7 +90,7 @@ body {
 	z-index: 1;
 }
 		</style>
-		
+		<!-- 网页版专用补丁：拦住浏览器的鼠标手势（右键开镜会弹出浏览器菜单） --><style>html,body{user-select:none;-webkit-user-select:none;-ms-user-select:none;-webkit-touch-callout:none;-webkit-user-drag:none;}</style><script>(function(){function kill(e){e.preventDefault();}['contextmenu','selectstart','dragstart'].forEach(function(t){document.addEventListener(t,kill,false);});document.addEventListener('auxclick',function(e){if(e.button===1){e.preventDefault();}},false);})();</script>
 	</head>
 	<body>
 		<canvas id="canvas">
@@ -109,7 +109,7 @@ body {
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":51194924,"index.wasm":35740641},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":51229468,"index.wasm":35740641},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
